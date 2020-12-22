@@ -1,0 +1,13 @@
+{
+	"Name": "vu-ks-tank",
+	"Authors": ["Maxinger15"],
+	"Description": "",
+	"URL": "",
+	"Version": "0.0.1",
+	"HasWebUI": false,
+	"HasVeniceEXT": true,
+	"Dependencies": {
+		"veniceext": "^1.0.0",
+		"VU-Killstreak" : "^1.2.1"
+    }
+}
