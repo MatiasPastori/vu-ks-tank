@@ -1,22 +1,20 @@
 print(SharedUtils:GetLevelName())
-print("hi")
+local mounted = false
 Events:Subscribe(
     "BundleMounter:GetBundles",
     function(bundles)
         print(SharedUtils:GetLevelName())
-        if(SharedUtils:GetLevelName() ~= "Levels/MP_012/MP_012") then
-            
+        name = SharedUtils:GetLevelName()
+        if name ~= "Levels/MP_012/MP_012" and name ~= nil and mounted == false then
+            print("loading tanks")
+            Events:Dispatch(
+                "BundleMounter:LoadBundles",
+                "Levels/MP_012/MP_012",
+                {
+                    "Levels/MP_012/MP_012",
+                    "Levels/MP_012/conquest_large"
+                }
+            )
         end
-       -- if(SharedUtils:GetLevelName() ~= "Levels/MP_012/MP_012") then
-        --    Events:Dispatch(
-        --    "BundleMounter:LoadBundles",
-       --     "Levels/MP_012/MP_012",
-        --    {
-        --        "Levels/MP_012/MP_012",
-       --         "Levels/MP_012/conquest_large"
-        --    }
-        --)
-        --end
-        
     end
 )
