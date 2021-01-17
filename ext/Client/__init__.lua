@@ -1,7 +1,7 @@
 local STRIKE_AREA_RADIUS = 50
 local STRIKE_DURATION = 15
 local STRIKE_MISSILE_COUNT = 40
-local debug = true
+local debug = false
 local FiringMode = {
 	Disabled = 0,
 	Target = 1,
