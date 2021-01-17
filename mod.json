@@ -3,7 +3,7 @@
 	"Authors": ["Maxinger15"],
 	"Description": "",
 	"URL": "",
-	"Version": "0.0.1",
+	"Version": "1.0.0",
 	"HasWebUI": false,
 	"HasVeniceEXT": true,
 	"Dependencies": {
